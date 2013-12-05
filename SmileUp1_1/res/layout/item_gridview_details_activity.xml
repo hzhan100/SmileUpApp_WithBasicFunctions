@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smileup.app1_1.customviews.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout_item_gridview_details"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/selector_griditem_detailsactivity"
+    android:padding="2.0px" >
+
+    <ImageView
+        android:id="@+id/image_item_gridview_details"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/title_item_gridview_details"
+        android:layout_width="wrap_content"
+        android:layout_height="35.0sp"
+        android:layout_alignBottom="@+id/image_item_gridview_details"
+        android:layout_alignLeft="@+id/image_item_gridview_details"
+        android:layout_alignRight="@+id/image_item_gridview_details"
+        android:background="#70000000"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:singleLine="true"
+        android:text="Title"
+        android:textColor="@android:color/white"
+        android:textSize="15.0sp" />
+
+</com.smileup.app1_1.customviews.SquareLayout>

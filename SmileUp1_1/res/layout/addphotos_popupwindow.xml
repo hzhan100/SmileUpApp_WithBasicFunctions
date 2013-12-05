@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/takephoto_popupwindow"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0dip"
+        android:background="@drawable/selector_addphotopopupwindow_layout"
+        android:clickable="true"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="5.0dip" >
+
+        <ImageView
+            android:id="@+id/camera_addphotos_popupwindows"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/darkgrey_camera" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toLeftOf="@+id/arrow1_addphoto_popupwindow"
+            android:layout_toRightOf="@+id/camera_addphotos_popupwindows"
+            android:text="Take Photo"
+            android:textSize="15.0sp" />
+
+        <ImageView
+            android:id="@+id/arrow1_addphoto_popupwindow"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:src="@drawable/arrow_titlebar_welcome_activities" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/selectfromgallery_popupwindow"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0dip"
+        android:background="@drawable/selector_addphotopopupwindow_layout"
+        android:clickable="true"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="5.0dip" >
+
+        <ImageView
+            android:id="@+id/gallery_addphotos_popupwindows"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/darkgrey_grid" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toLeftOf="@+id/arrow2_addphoto_popupwindow"
+            android:layout_toRightOf="@+id/gallery_addphotos_popupwindows"
+            android:text="Select from Gallery"
+            android:textSize="15.0sp" />
+
+        <ImageView
+            android:id="@+id/arrow2_addphoto_popupwindow"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:src="@drawable/arrow_titlebar_welcome_activities" />
+    </RelativeLayout>
+
+</LinearLayout>

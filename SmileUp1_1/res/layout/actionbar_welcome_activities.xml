@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5.0dip" >
+
+    <TextView
+        android:id="@+id/cancletext_titlebar_welcomeactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.0dip"
+        android:text="Cancel"
+        android:textColor="#ff7a7a7a"
+        android:textSize="20.0sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_titlebar_welcomeactivity"
+        android:layout_width="100.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_actionbar_layoutbutton"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/logintext_titlebar_welcomeactivity"
+            android:layout_width="55.0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toLeftOf="@+id/arrow_titlebar_welcomeactivity"
+            android:singleLine="true"
+            android:text="Login"
+            android:textColor="#ff84bd57"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:id="@+id/arrow_titlebar_welcomeactivity"
+            android:layout_width="30.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:src="@drawable/arrow_titlebar_welcome_activities" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_gravity="center"
+    android:padding="0.0dip" >
+
+    <ImageView
+        android:id="@+id/backbutton_actionbar_detail_activity"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_actionbar_layoutbutton"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrow_inverse_titlebar_welcome_activities" />
+
+    <TextView
+        android:id="@+id/title_actionbar_detail_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/backbutton_actionbar_detail_activity"
+        android:layout_alignTop="@+id/backbutton_actionbar_detail_activity"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/backbutton_actionbar_detail_activity"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:text="Title"
+        android:textSize="20.0sp" />
+
+</RelativeLayout>

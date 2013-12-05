@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5.0dip"
+    android:paddingTop="5.0dip" >
+
+    <ImageView
+        android:id="@+id/logo_togglebutton_baselayout_preference"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/grey_pencil" />
+
+    <TextView
+        android:id="@+id/title_togglebutton_baselayout_preference"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_toLeftOf="@+id/button_togglebutton_baselayout_preference"
+        android:layout_toRightOf="@+id/logo_togglebutton_baselayout_preference"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:marqueeRepeatLimit="1"
+        android:padding="5.0dip"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Name"
+        android:textSize="17.0sp" />
+
+    <ToggleButton
+        android:id="@+id/button_togglebutton_baselayout_preference"
+        android:layout_width="70.0dip"
+        android:layout_height="25.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_grey_togglebutton"
+        android:checked="false"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textOff="Connect"
+        android:textOn="Disconnect"
+        android:textSize="13.0sp" />
+
+</RelativeLayout>

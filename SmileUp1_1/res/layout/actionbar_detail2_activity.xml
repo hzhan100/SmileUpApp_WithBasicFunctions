@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?actionBarSize"
+    android:padding="0.0dip" >
+
+    <ImageView
+        android:id="@+id/backbutton_actionbar_detail2_activity"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrow_inverse_titlebar_welcome_activities" />
+
+    <TextView
+        android:id="@+id/title_actionbar_detail2_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/backbutton_actionbar_detail2_activity"
+        android:layout_alignTop="@+id/backbutton_actionbar_detail2_activity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_toLeftOf="@+id/favoritebutton_actionbar_detail2_activity"
+        android:layout_toRightOf="@+id/backbutton_actionbar_detail2_activity"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:text="Title"
+        android:textSize="20.0sp" />
+
+    <LinearLayout
+        android:id="@+id/favoritebutton_actionbar_detail2_activity"
+        android:layout_width="80.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/backbutton_actionbar_detail2_activity"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/backbutton_actionbar_detail2_activity"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/selector_main_button"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2.0dip"
+            android:text="Favorite"
+            android:textColor="@android:color/white"
+            android:textSize="13.0sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/white_favorite" />
+    </LinearLayout>
+
+</RelativeLayout>

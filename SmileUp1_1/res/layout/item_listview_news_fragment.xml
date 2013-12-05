@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corner_listview_news" >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout1_item_listview_newsfragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5.0dip" >
+
+        <com.smileup.app1_1customviews.RoundedImageView
+            android:id="@+id/headprotrait_item_listview_newsfragment"
+            android:layout_width="70.0dip"
+            android:layout_height="70.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/headprotrait_item_listview_newsfragment"
+            android:layout_alignTop="@+id/headprotrait_item_listview_newsfragment"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@+id/headprotrait_item_listview_newsfragment" >
+
+            <TextView
+                android:id="@+id/name_item_listview_newsfragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5.0dip"
+                android:layout_toLeftOf="@+id/time_item_listview_newsfragment"
+                android:ellipsize="end"
+                android:scrollHorizontally="true"
+                android:text="Name"
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:id="@+id/time_item_listview_newsfragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="time"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/describe_item_listview_newsfragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_item_listview_newsfragment"
+                android:layout_marginTop="5.0dip"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="describe"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.smileup.app1_1customviews.SquareLayout
+        android:id="@+id/squarelayout_item_listview_newsfragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativelayout1_item_listview_newsfragment"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:layout_marginTop="5.0dip"
+        android:padding="0.0dip" >
+
+        <ImageView
+            android:id="@+id/image_item_listview_newsfragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/selector_griditem_detailsactivity"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0sp"
+            android:layout_alignBottom="@+id/image_item_listview_newsfragment"
+            android:layout_alignLeft="@+id/image_item_listview_newsfragment"
+            android:layout_alignRight="@+id/image_item_listview_newsfragment"
+            android:background="#30000000"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/comments_item_listview_newsfragment"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0sp"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:text="comments"
+                android:textColor="@android:color/white"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/share_item_listview_newsfragment"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0sp"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:text="shares"
+                android:textColor="@android:color/white"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/donate_item_listview_newsfragment"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0sp"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:text="donated"
+                android:textColor="@android:color/white"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+    </com.smileup.app1_1customviews.SquareLayout>
+
+    <TextView
+        android:id="@+id/details_item_listview_newsfragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/squarelayout_item_listview_newsfragment"
+        android:layout_alignRight="@+id/squarelayout_item_listview_newsfragment"
+        android:layout_below="@+id/squarelayout_item_listview_newsfragment"
+        android:layout_marginTop="5.0dip"
+        android:maxLines="2"
+        android:text="Describe"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12.0sp" />
+
+    <LinearLayout
+        android:id="@+id/comment_button_item_listview_newsfragment"
+        android:layout_width="120.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/details_item_listview_newsfragment"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/selector_main_button"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip" >
+
+        <ImageView
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:src="@drawable/comment_icon_white" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="Comments"
+            android:textColor="@android:color/white"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/favorite_button_item_listview_newsfragment"
+        android:layout_width="120.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/comment_button_item_listview_newsfragment"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/selector_main_button"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip" >
+
+        <ImageView
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:src="@drawable/white_favorite" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="Favorite"
+            android:textColor="@android:color/white"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/share_button_item_listview_newsfragment"
+        android:layout_width="120.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/details_item_listview_newsfragment"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/selector_main_button"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip" >
+
+        <ImageView
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:src="@drawable/share_icon_white" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="Share"
+            android:textColor="@android:color/white"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/donate_button_item_listview_newsfragment"
+        android:layout_width="120.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/share_button_item_listview_newsfragment"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/selector_main_button"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip" >
+
+        <ImageView
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:src="@drawable/white_dollar" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="Donate"
+            android:textColor="@android:color/white"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/donors_layout_item_listview_newsfragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/donate_button_item_listview_newsfragment"
+        android:layout_marginTop="5.0dip"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Donors" />
+
+        <RelativeLayout
+            android:id="@+id/photos_layout_item_listview_newsfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/selector_createcampaign_layoutbutton"
+            android:gravity="center" >
+
+            <com.smileup.app1_1customviews.RoundedImageView
+                android:id="@+id/donor1_item_listview_newsfragment"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:visibility="invisible" />
+
+            <com.smileup.app1_1customviews.RoundedImageView
+                android:id="@+id/donor2_item_listview_newsfragment"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@+id/donor1_item_listview_newsfragment"
+                android:visibility="invisible" />
+
+            <com.smileup.app1_1customviews.RoundedImageView
+                android:id="@+id/donor3_item_listview_newsfragment"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@+id/donor2_item_listview_newsfragment"
+                android:visibility="invisible" />
+
+            <com.smileup.app1_1customviews.RoundedImageView
+                android:id="@+id/donor4_item_listview_newsfragment"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@+id/donor3_item_listview_newsfragment"
+                android:visibility="invisible" />
+
+            <com.smileup.app1_1customviews.RoundedImageView
+                android:id="@+id/donor5_item_listview_newsfragment"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@+id/donor4_item_listview_newsfragment"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/donor6_item_listview_newsfragment"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_toRightOf="@+id/donor5_item_listview_newsfragment"
+                android:background="@drawable/green_circle"
+                android:gravity="center"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

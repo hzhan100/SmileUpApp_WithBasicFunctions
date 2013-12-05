@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="SmileupGreen">#ff80ba54</color>
+    <color name="SmileupGreen2">#ffc7dd8a</color>
+    <color name="SmileupBlue">#ff3193ea</color>
+    <color name="SmileupGrey">#ff7f7f7f</color>
+    <color name="SmileupGrey2">#fff0f0f0</color>
+
+</resources>

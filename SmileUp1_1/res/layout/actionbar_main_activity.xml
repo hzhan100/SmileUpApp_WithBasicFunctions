@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:paddingLeft="10.0dip" >
+
+    <ImageView
+        android:id="@+id/menubutton_actionabr_main"
+        android:layout_width="25.0dip"
+        android:layout_height="25.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/selector_actionbar_menu" />
+
+    <ImageView
+        android:id="@+id/logo_actionbar_main"
+        android:layout_width="75.0dip"
+        android:layout_height="25.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toRightOf="@id/menubutton_actionabr_main"
+        android:src="@drawable/green_logo" />
+
+    <ImageView
+        android:id="@+id/createcampaignbutton_actionbar_main"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/selector_actionbar_createcampaign" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15.0dip"
+    android:paddingTop="15.0dip" >
+
+    <ImageView
+        android:id="@+id/background_image_baselayout_preference"
+        android:layout_width="fill_parent"
+        android:layout_height="130.0dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <com.smileup.app1_1.customviews.RoundedImageView
+        android:id="@+id/photo_image_baselayout_pereference"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

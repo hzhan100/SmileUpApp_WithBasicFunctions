@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10.0dip"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    android:paddingTop="10.0dip" >
+
+    <com.smileup.app1_1.customviews.RoundedImageView
+        android:id="@+id/photo_item_listview_donorsactivity"
+        android:layout_width="70.0dip"
+        android:layout_height="70.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/name_item_lisview_donorsactivity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/photo_item_listview_donorsactivity"
+        android:layout_alignTop="@+id/photo_item_listview_donorsactivity"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toLeftOf="@+id/dollaricon_donorsactivity"
+        android:layout_toRightOf="@+id/photo_item_listview_donorsactivity"
+        android:gravity="center"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="name"
+        android:textSize="15.0sp" />
+
+    <ImageView
+        android:id="@+id/dollaricon_donorsactivity"
+        android:layout_width="25.0dip"
+        android:layout_height="25.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toLeftOf="@+id/money_item_listview_donorsactivity"
+        android:scaleType="fitCenter"
+        android:src="@drawable/green_dollar" />
+
+    <TextView
+        android:id="@+id/money_item_listview_donorsactivity"
+        android:layout_width="50.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/photo_item_listview_donorsactivity"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/photo_item_listview_donorsactivity"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:gravity="center"
+        android:scrollHorizontally="true"
+        android:text="money"
+        android:textSize="13.0sp" />
+
+</RelativeLayout>

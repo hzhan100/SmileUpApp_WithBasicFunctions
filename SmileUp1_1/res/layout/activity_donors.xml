@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/divider_titilebar_smileup" />
+
+    <TextView
+        android:id="@+id/countnumber_donors_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="left"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:text="52 Donated"
+        android:textSize="20.0sp" />
+
+    <ListView
+        android:id="@+id/listview_donors_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip" />
+
+</LinearLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/SmileupGrey2" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/relativelayout1_profile_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="200.0dip"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50.0dip"
+                android:background="@drawable/blue_banner"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/raised_profile_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Raised"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/donated_profile_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center"
+                    android:text="Donated"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <com.smileup.app1_1.customviews.RoundedImageView
+                android:id="@+id/headerportrait_profile_fragment"
+                android:layout_width="110.0dip"
+                android:layout_height="110.0dip"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/shuoshuo_profile_fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerportrait_profile_fragment"
+                android:layout_marginTop="10.0dip"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="2"
+                android:text="Hello"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout1_profile_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativelayout1_profile_fragment"
+            android:layout_marginTop="20.0dip"
+            android:orientation="horizontal" >
+
+            <com.smileup.app1_1.customviews.LinearSquareLayout
+                android:id="@+id/followers_button_profilefragment"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_main_button"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/white_check" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100.0px"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Followers"
+                    android:textColor="@android:color/white"
+                    android:textSize="11.0sp"
+                    android:textStyle="bold" />
+            </com.smileup.app1_1.customviews.LinearSquareLayout>
+
+            <com.smileup.app1_1.customviews.LinearSquareLayout
+                android:id="@+id/followings_button_profilefragment"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_main_button"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/white_personcheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100.0px"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Following"
+                    android:textColor="@android:color/white"
+                    android:textSize="11.0sp"
+                    android:textStyle="bold" />
+            </com.smileup.app1_1.customviews.LinearSquareLayout>
+
+            <com.smileup.app1_1.customviews.LinearSquareLayout
+                android:id="@+id/champaigns_button_profilefragment"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_main_button"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/white_dollar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100.0px"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Champaigns"
+                    android:textColor="@android:color/white"
+                    android:textSize="11.0sp"
+                    android:textStyle="bold" />
+            </com.smileup.app1_1.customviews.LinearSquareLayout>
+
+            <com.smileup.app1_1.customviews.LinearSquareLayout
+                android:id="@+id/favorites_button_profilefragment"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_main_button"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5.0dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/white_favorite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100.0px"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Favorites"
+                    android:textColor="@android:color/white"
+                    android:textSize="11.0sp"
+                    android:textStyle="bold" />
+            </com.smileup.app1_1.customviews.LinearSquareLayout>
+        </LinearLayout>
+
+        <com.smileup.app1_1.customviews.MyListView
+            android:id="@+id/listview_profile_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearlayout1_profile_fragment"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="30.0dip"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0dip" />
+    </RelativeLayout>
+
+</ScrollView>

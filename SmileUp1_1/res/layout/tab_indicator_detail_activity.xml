@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1.0" >
+
+    <ImageView
+        android:id="@+id/icon_tabindicator_detail_activity"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_alignBottom="@+id/title_tabindicator_detail_activity"
+        android:layout_alignTop="@+id/title_tabindicator_detail_activity"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.0dip"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/title_tabindicator_detail_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5.0dip"
+        android:layout_toRightOf="@+id/icon_tabindicator_detail_activity"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20.0sp" />
+
+</RelativeLayout>

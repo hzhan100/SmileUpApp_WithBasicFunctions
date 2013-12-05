@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5.0dip"
+    android:paddingTop="5.0dip" >
+
+    <TextView
+        android:id="@+id/title_switch_baselayout_preference"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_toLeftOf="@+id/switcher_switch_baselayout_preference"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:marqueeRepeatLimit="1"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Name"
+        android:textSize="17.0sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/switcher_switch_baselayout_preference"
+        android:layout_width="wrap_content"
+        android:layout_height="25.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:textSize="13.0sp" />
+
+</RelativeLayout>
